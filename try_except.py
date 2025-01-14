@@ -65,7 +65,8 @@ def list_dict(input_list: list):
         a_dict = dict(input_list)  # 嘗試將 list 轉換為字典
     except Exception as e:  # 捕捉所有異常
         print(f'發生錯誤: {str(e)}')  # 打印錯誤訊息
-        traceback.print_exc()  # 打印完整的錯誤堆棧跟蹤
+        print(f'發生錯誤: {e}')  # 打印錯誤訊息
+        # traceback.print_exc()  # 打印完整的錯誤堆棧跟蹤
     finally:
         # 如果有需要進行清理的操作，可以放在這裡
         print("清理操作：這段程式碼總是會執行")
