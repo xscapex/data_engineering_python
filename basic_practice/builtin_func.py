@@ -47,3 +47,15 @@ scores = [85, 90, None]  # 有缺失數據
 # 過濾掉 None 的數據
 cleaned_data = [(name, score) for name, score in zip(names, scores) if score is not None]
 print(cleaned_data)
+
+
+
+
+# globals()
+# locals()
+
+def show_globals():
+    print(globals())  # 查看全域命名空間
+    print("Value of x:", globals()["scores"])  # 直接存取全域變數
+
+show_globals()

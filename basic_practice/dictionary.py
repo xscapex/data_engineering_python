@@ -56,6 +56,10 @@ print(a_dict)
 # values() 取得所有 value
 
 # items() 取得所有的值對
+print(a_dict.keys())
+print(a_dict.values())
+print(a_dict.items())
 
-
-print()
+print(type(a_dict.keys()))
+print(type(a_dict.values()))
+print(type(a_dict.items()))
